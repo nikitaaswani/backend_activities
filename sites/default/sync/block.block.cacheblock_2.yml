@@ -1,0 +1,20 @@
+uuid: 0752de3d-600e-4254-a35b-311632b71901
+langcode: en
+status: true
+dependencies:
+  module:
+    - cache_block
+  theme:
+    - bartik
+id: cacheblock_2
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: cache_api_block
+settings:
+  id: cache_api_block
+  label: 'Cache block'
+  provider: cache_block
+  label_display: visible
+visibility: {  }

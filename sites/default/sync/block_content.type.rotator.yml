@@ -1,0 +1,8 @@
+uuid: a41e65de-9729-440e-9611-fa0abba99928
+langcode: en
+status: true
+dependencies: {  }
+id: rotator
+label: Rotator
+revision: 0
+description: 'A Rotator block used to create rotators.'

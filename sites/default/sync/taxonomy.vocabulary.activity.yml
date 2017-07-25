@@ -1,0 +1,9 @@
+uuid: 1641e384-c954-470b-963e-0844e8ab356b
+langcode: en
+status: true
+dependencies: {  }
+name: Activity
+vid: activity
+description: ''
+hierarchy: 0
+weight: 0

@@ -1,0 +1,21 @@
+uuid: 9a61414a-cf18-4614-acd7-78ffb33ed061
+langcode: en
+status: true
+dependencies:
+  module:
+    - custom_block
+  theme:
+    - bartik
+id: weatherblock
+theme: bartik
+region: sidebar_first
+weight: -12
+provider: null
+plugin: weather_config_block
+settings:
+  id: weather_config_block
+  label: 'Weather block'
+  provider: custom_block
+  label_display: '0'
+  city_name: Mumbai
+visibility: {  }

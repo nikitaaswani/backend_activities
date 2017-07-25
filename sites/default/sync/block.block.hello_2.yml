@@ -1,0 +1,33 @@
+uuid: 5fc22af0-c0fc-45cf-8cab-85bb62bc8c09
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:e4b0988b-2687-45f0-9de6-92726fc71977'
+  module:
+    - block_content
+    - language
+  theme:
+    - bartik
+id: hello_2
+theme: bartik
+region: sidebar_first
+weight: -10
+provider: null
+plugin: 'block_content:e4b0988b-2687-45f0-9de6-92726fc71977'
+settings:
+  id: 'block_content:e4b0988b-2687-45f0-9de6-92726fc71977'
+  label: Hello
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  language:
+    id: language
+    langcodes:
+      es: es
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'

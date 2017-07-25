@@ -1,0 +1,20 @@
+uuid: f04f2eaf-5e9d-4d95-bfab-4eb6b6d70c68
+langcode: en
+status: true
+dependencies:
+  module:
+    - cache_block
+  theme:
+    - bartik
+id: cacheblock
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: cache_api_block
+settings:
+  id: cache_api_block
+  label: 'Cache block'
+  provider: cache_block
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: e145638f-efdc-4996-bb22-042976af9c60
+langcode: en
+status: true
+dependencies:
+  module:
+    - book_module
+  theme:
+    - bartik
+id: bookblock_2
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: book_config_block
+settings:
+  id: book_config_block
+  label: 'Book block'
+  provider: book_module
+  label_display: '0'
+  isbn: '9780142181119'
+visibility: {  }

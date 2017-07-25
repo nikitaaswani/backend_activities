@@ -1,0 +1,11 @@
+uuid: d2876c34-43a4-4be8-8b24-1ccaa2245a96
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.profession
+id: taxonomy_term.profession
+target_entity_type_id: taxonomy_term
+target_bundle: profession
+default_langcode: site_default
+language_alterable: false

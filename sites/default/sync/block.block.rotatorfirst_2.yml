@@ -1,0 +1,31 @@
+uuid: 7ac5b584-8387-4c07-a7e0-e601b32e486c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:rotator:d53b0976-88ac-447b-9f74-c92f232d26eb'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: rotatorfirst_2
+theme: bartik
+region: content
+weight: -5
+provider: null
+plugin: 'block_content:d53b0976-88ac-447b-9f74-c92f232d26eb'
+settings:
+  id: 'block_content:d53b0976-88ac-447b-9f74-c92f232d26eb'
+  label: 'Rotator first'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

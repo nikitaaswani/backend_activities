@@ -1,0 +1,21 @@
+uuid: 42dea4cd-1273-4a82-86cd-c776d371e097
+langcode: en
+status: true
+dependencies:
+  module:
+    - custom_block
+  theme:
+    - bartik
+id: weatherblock_2
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: weather_config_block
+settings:
+  id: weather_config_block
+  label: 'Weather block'
+  provider: custom_block
+  label_display: '0'
+  city_name: Jaipur
+visibility: {  }
