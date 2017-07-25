@@ -1,0 +1,91 @@
+static_menu_item.description:
+  path: 'static-content'
+  defaults:
+    _controller: '\Drupal\static_menu_item\Controller\PageController::description'
+    _title: 'Hello'
+  requirements:
+    _permission: 'access training content'
+
+static_menu_item.arguments:
+  path: '/admin/content/static-content/arg/{arg}'
+  defaults:
+    _controller: 'Drupal\static_menu_item\Controller\PageController::arguments'
+    _title: 'Static content with arguments'
+    arg: 'Hello'
+  requirements:
+    _permission: 'access training content'
+
+static_menu_item.parameter:
+  path: 'static-content/{node}'
+  defaults:
+    _controller: 'Drupal\static_menu_item\Controller\PageController::parameterUpcasting'
+  requirements:
+    node: \d+
+    _permission: 'access training content'
+  options:
+    parameters:
+      node:
+        type: entity:node
+
+static_menu_item.multiple_parameter:
+  path: 'static-content/{node1}/{node2}'
+  defaults:
+    _controller: 'Drupal\static_menu_item\Controller\PageController::multipleParameterUpcasting'
+  requirements:
+    node: \d+
+    # _permission: 'access training content'
+    _role: 'administrator'
+  options:
+    parameters:
+      node1:
+        type: entity:node
+      node2:
+        type: entity:node
+
+static_menu_item.action_item:
+  path: 'listing/{node}'
+  defaults:
+    _controller: 'Drupal\static_menu_item\Controller\PageController::parameterUpcasting'
+  requirements:
+    node: \d+
+    _my_custom_access: 'TRUE'
+  options:
+    parameters:
+      node:
+        type: entity:node
+
+static_menu_item.access_check_controller:
+  path: 'list/{node}'
+  defaults:
+    _controller: 'Drupal\static_menu_item\Controller\PageController::parameterUpcasting'
+  requirements:
+    node: \d+
+    _custom_access: 'Drupal\static_menu_item\Controller\PageController::access'
+  options:
+    parameters:
+      node:
+        type: entity:node
+
+static_menu_item.simple_form:
+  path: '/simple-form'
+  defaults:
+    _form:  '\Drupal\static_menu_item\Form\SimpleForm'
+    _title: 'Simple Form'
+  requirements:
+    _permission: 'access content'
+
+static_menu_item.dependency_injection_form:
+  path: '/dic-form'
+  defaults:
+    _form:  '\Drupal\static_menu_item\Form\DependencyInjectionForm'
+    _title: 'Dependency Injection Form'
+  requirements:
+    _permission: 'access content'
+
+static_menu_item.config_form:
+  path: 'admin/weather-config'
+  defaults:
+    _form: '\Drupal\static_menu_item\Form\ConfigForm'
+    _title: 'Configuration Form'
+  requirements:
+    _permission: 'access content'

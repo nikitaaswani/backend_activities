@@ -1,0 +1,16 @@
+# Ignore paths that contain user-generated content.
+sites/*/files
+sites/*/private
+
+# Ignore configuration files that may contain sensitive information.
+sites/*/settings*.php
+sites/*/services*.yml
+
+# Core's dependencies are managed with Composer.
+vendor
+
+# sass cache file
+.sass-cache
+
+# node_modules directory
+themes/*/node_modules

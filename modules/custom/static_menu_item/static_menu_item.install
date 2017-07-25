@@ -1,0 +1,27 @@
+<?php
+
+function static_menu_item_schema() {
+  $schema['name'] = array(
+    'fields' => array(
+      'fid' => array(
+      'type'=>'serial',
+      'not null' => TRUE,
+      ),
+      'first_name' => array(
+        'description' => 'This column simply holds first name values',
+        'type' => 'varchar',
+        'length' => 25,
+        'not null' => TRUE,
+      ),
+      'last_name' => array(
+        'description' => 'This column simply holds last name values',
+        'type' => 'varchar',
+        'length' => 25,
+        'not null' => TRUE,
+      ),
+    ),
+    'primary key' => array('fid'),
+  );
+
+  return $schema;
+}

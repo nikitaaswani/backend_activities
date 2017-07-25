@@ -1,0 +1,9 @@
+static_content.tab:
+  title: Tab1
+  route_name: static_menu_item.description
+  base_route: system.admin_content
+
+static_content_arguments.tab:
+  title: Tab2
+  route_name: static_menu_item.arguments
+  base_route: system.admin_content

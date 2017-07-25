@@ -1,0 +1,3 @@
+services:
+  custom_block.weather_api:
+    class: 'Drupal\custom_block\CustomGuzzleHttp'

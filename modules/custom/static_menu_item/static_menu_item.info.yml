@@ -1,0 +1,5 @@
+name: 'Static content menu item'
+description: 'An experimental module to build menu item and its routing in Drupal 8'
+package: Custom
+type: module
+core: 8.x

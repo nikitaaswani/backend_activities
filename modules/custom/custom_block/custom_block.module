@@ -1,0 +1,17 @@
+<?php
+
+function custom_block_theme() {
+  return [
+    'weather_info' => [
+      'variables' => [
+        'items' => [],
+        'title' => ''
+      ]
+    ]
+  ];
+}
+
+function custom_block_page_attachments(array &$attachments) {
+
+  $attachments['#attached']['library'][] = 'custom_block/image-border';
+}

@@ -1,0 +1,5 @@
+name: Custom Book Block
+type: module
+description: Custom block that takes isbn of book.
+package: Custom
+core: 8.x

@@ -1,0 +1,15 @@
+block-display:
+  css:
+    base:
+      css/block-display-layout.css: {}
+  js:
+    js/jquery.flip.js: {}
+    js/block-display-layout.js: {}
+
+  dependencies:
+    - core/jquery
+
+image-border:
+  css:
+    base:
+      css/image-border-layout.css: {}

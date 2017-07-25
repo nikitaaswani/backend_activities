@@ -1,0 +1,5 @@
+name: Cache API Block
+type: module
+description: Custom block for implementing cache API.
+package: Custom
+core: 8.x

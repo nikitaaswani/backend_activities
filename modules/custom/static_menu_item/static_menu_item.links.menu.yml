@@ -1,0 +1,11 @@
+static_menu_item.description:
+  title: 'Static Content'
+  parent: system.admin_config_system
+  description: 'Static menu item'
+  route_name: static_menu_item.description
+
+static_menu_item.arguments:
+  title: 'Static Content with arguments'
+  description: 'Static menu item with arguments'
+  route_name: static_menu_item.arguments
+

@@ -1,0 +1,5 @@
+block_content_type_add:
+  route_name: static_menu_item.description
+  title: 'Add content'
+  appears_on:
+    - static_menu_item.action_item
