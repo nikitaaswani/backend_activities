@@ -1,0 +1,18 @@
+uuid: 699d5eb3-4a4d-499e-83c5-2b560b47882e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.activities
+id: node.activities.title
+field_name: title
+entity_type: node
+bundle: activities
+label: Activity
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

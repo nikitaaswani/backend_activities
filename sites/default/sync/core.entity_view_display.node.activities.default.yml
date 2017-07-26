@@ -1,0 +1,18 @@
+uuid: e984f290-ca6c-4944-b944-dce0c4696f9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.activities
+  module:
+    - user
+id: node.activities.default
+targetEntityType: node
+bundle: activities
+mode: default
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true
