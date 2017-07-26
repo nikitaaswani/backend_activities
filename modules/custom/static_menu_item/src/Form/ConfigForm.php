@@ -13,7 +13,7 @@ class ConfigForm extends ConfigFormBase {
 
   protected function getEditableConfigNames() {
     return [
-      'my_module.settings.appid',
+      'static_menu_item.settings.appid',
     ];
   }
 
@@ -30,7 +30,7 @@ class ConfigForm extends ConfigFormBase {
   }
 
   public function submitForm(array &$form, FormStateInterface $form_state) {
-    $this->config('my_module.settings.appid')
+    $this->config('static_menu_item.settings.appid')
       ->set('appid', $form_state->getValue('id'))
       ->save();
 
