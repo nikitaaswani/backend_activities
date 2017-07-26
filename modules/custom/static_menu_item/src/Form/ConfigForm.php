@@ -18,7 +18,7 @@ class ConfigForm extends ConfigFormBase {
   }
 
   public function buildForm(array $form, FormStateInterface $form_state) {
-    $config = $this->config('my_module.settings.appid');
+    $config = $this->config('static_menu_item.settings.appid');
 
     $form['id'] = array(
       '#type' => 'textfield',
