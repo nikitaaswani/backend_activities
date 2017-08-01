@@ -1,0 +1,15 @@
+<?php
+use Drupal\block_content\Entity\BlockContent;
+
+ /**
+ * Implements hook_install().
+  */
+ function hindi_kavita_install() {
+  // Add Demo block.
+  $block_content = BlockContent::create([
+    'type' => 'rotator',
+    'info' => 'Demo Block',
+    'uuid' => '3dd38988-66f8-448d-9a59-381d8d9901kf',
+  ]);
+  $block_content->save();
+}
